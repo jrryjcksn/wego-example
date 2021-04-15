@@ -1,7 +1,6 @@
 kind: Service
 apiVersion: v1
 metadata:
-  namespace: flux-system
   name: nginx
 spec:
   selector:
@@ -14,7 +13,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: flux-system
   name: nginx-deployment
   labels:
     app: nginx
